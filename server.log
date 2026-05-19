@@ -1,0 +1,5 @@
+[2026-05-19T12:19:47.300Z] GET /
+[2026-05-19T12:19:47.886Z] GET /favicon.ico
+[2026-05-19T12:20:16.924Z] GET /recipes
+[2026-05-19T12:20:47.590Z] GET /recipes?cuisine=Cameroonian
+[2026-05-19T12:21:19.147Z] GET /n-importe-quoi%20%20%E2%86%92%20404

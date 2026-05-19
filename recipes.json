@@ -1,0 +1,44 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Jollof Rice",
+      "cuisine": "West African",
+      "prepTime": 45,
+      "ingredients": [
+        "rice",
+        "tomato",
+        "onion"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ndole",
+      "cuisine": "Cameroonian",
+      "prepTime": 60,
+      "ingredients": [
+        "ndole leaves",
+        "groundnuts",
+        "beef"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Poulet DG",
+      "cuisine": "Cameroonian",
+      "prepTime": 50,
+      "ingredients": [
+        "chicken",
+        "plantain",
+        "vegetables"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Egusi Soup",
+      "cuisine": "Nigerian",
+      "prepTime": 40,
+      "ingredients": []
+    }
+  ]
+}

@@ -21,3 +21,19 @@ function writeRecipes(data, callback) {
 }
 
 module.exports = { readRecipes, writeRecipes };
+
+
+//1. fs.readFile vs fs.readFileSync ?
+//fs.readFileSync bloque tout le processus Node.js jusqu'à la fin de la lecture — 
+// aucune autre requête ne peut être traitée pendant ce temps. fs.readFile est asynchrone : Node.js lance la lecture,
+//  continue à exécuter d'autres tâches (traiter d'autres requêtes HTTP, par exemple), 
+// puis appelle le callback quand la lecture est terminée. Dans un serveur, on utilise toujours 
+// fs.readFile pour ne pas bloquer les autres utilisateurs.
+//2. module.exports et pourquoi diviser en modules ?
+//module.exports expose les fonctions d'un fichier pour qu'un autre fichier puisse les require().
+//  On divise le code en modules pour : réutilisabilité (fileHelper utilisé dans cli.js ET server.js),
+//  lisibilité, et séparation des responsabilités — chaque fichier a un rôle précis.
+//3. Pourquoi ne jamais commiter .env ?
+//Le .env contient des secrets : mots de passe, clés API, tokens. Si on le met sur GitHub,
+//  n'importe qui peut lire ces secrets. Le .env.example (sans vraies valeurs) sert de documentation
+//  pour les nouveaux développeurs du projet.
